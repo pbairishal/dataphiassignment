@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Submit Form Using AJAX and jQuery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+</head>
+    
+<style>
+body {
+  background-image: url("https://image.ibb.co/fqkgMw/dust_scratches.png");
+}    
+#form {
+background-color:#fff;
+color:#123456;
+box-shadow:0 1px 1px 1px #123456;
+width:350px;
+margin:-0 0 5px 55%;
+float:left;
+height:700px
+}
+#form div {
+padding:5px 0 0 30px
+}
+h3 {
+margin-top:0;
+color:#fff;
+background-color:#3C599B;
+text-align:center;
+width:100%;
+height:50px;
+padding-top:10px
+}
+#mainform {
+width:960px;
+margin-top:-50px;
+}
+input,select {
+width:90%;
+height:30px;
+margin-bottom:15px;
+border-radius:3px;
+padding:2px;
+box-shadow:0 1px 1px 0 #123456
+}
+textarea {
+width:90%;
+margin-bottom:5px;
+border-radius:3px;
+padding:2px;
+box-shadow:0 1px 1px 0 #123456
+}
+input[type=button] {
+background-color:#3C599B;
+font-size:18px;
+height:35px;    
+color:#fff
+}    
+    
+</style>    
+    
+<body>
+
+<div id="mainform">
+<h2 class="text-center"><b>Submit Patient Details</b></h2>
+    
+    
+    <div id="form"><button class="btn btn-info btn-block" style="margin-top:0px;" onclick="window.location.href='./page2.php'"><b>Click to view patient directory</b></button>
+<h3>Fill Patient Information !</h3>
+<div>
+    <label>First Name <sup>*</sup></label>
+<input id="fname" type="text">
+<label>Last Name <sup>*</sup></label>
+<input id="lname" type="text">  
+<label>Age <sup>*</sup></label>
+<input id="age" type="number">
+<label>Date of Birth <sup>*</sup></label>
+<input id="dob" type="date">
+<label>Contact No <sup>*</sup></label>
+<input id="contact" type="tel">
+<label>Gender <sup>*</sup></label>  
+  <select id="gender">
+    <option value="None selected" hidden>Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Others">Others</option>  
+</select>
+<label>Message/Information </label>
+<textarea id="txtArea" rows="3" maxlength="200" cols="60"></textarea>
+<input id="submit" type="button" value="Submit">
+    <sup>*</sup>Indicates Required feild.
+</div>
+    
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
